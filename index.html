@@ -82,6 +82,9 @@
   <span class="nt">&lt;body&gt;</span>
     <span class="nt">&lt;h1&gt;</span>My playground app<span class="nt">&lt;/h1&gt;</span>
     <span class="nt">&lt;p&gt;</span>This is the important line everyone reads..<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Start now<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
 
     <span class="nt">&lt;h2&gt;</span>Fast<span class="nt">&lt;/h2&gt;</span>
     <span class="nt">&lt;p&gt;</span>A fast app, <span class="nt">&lt;strong&gt;</span>very fast<span class="nt">&lt;/strong&gt;</span> app<span class="nt">&lt;/p&gt;</span>
@@ -207,16 +210,24 @@
   <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
   <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">1px</span> <span class="m">1px</span> <span class="m">5px</span> <span class="no">black</span><span class="p">;</span>
 <span class="p">}</span>
-
-<span class="nc">.card</span><span class="p">{</span>
-  <span class="nl">padding</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+<span class="nf">#header</span> <span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#header</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="nl">opacity</span><span class="p">:</span> <span class="m">0.8</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
   <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">lighter</span><span class="p">;</span>
 <span class="p">}</span>
-
 <span class="nf">#footer</span><span class="p">{</span>
   <span class="nl">padding</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
   <span class="nl">background</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">30</span><span class="p">,</span> <span class="m">30</span><span class="p">,</span> <span class="m">30</span><span class="p">);</span>
   <span class="nl">color</span><span class="p">:</span> <span class="no">lightgrey</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.card</span><span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">lighter</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre>
 
@@ -253,34 +264,9 @@
       <section class="readme-section">
         <h2 class="readme-header">7. Bootstrap setup</h2>
         <ol>
-          <li>Create a new <code>index.html</code> file with the Bootstrap template below</li>
-          <li>Inject your content in the <code>body</code></li>
+          <li>Add `<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">` to the `head` of your HTML document.</li>
           <li>Play with <code>class="btn btn-primary"</code> and <code>class="list-inline"</code>, your first Bootstrap classes</li>
         </ol>
-<pre class="highlight html"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-  <span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
-
-    <span class="nt">&lt;title&gt;</span>My landing Page<span class="nt">&lt;/title&gt;</span>
-
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"style.css"</span><span class="nt">&gt;</span>
-
-  <span class="nt">&lt;/head&gt;</span>
-  <span class="nt">&lt;body&gt;</span>
-
-    <span class="c">&lt;!-- TODO: insert your page content here --&gt;</span>
-
-    <span class="c">&lt;!-- jQuery &amp; Bootstrap javascript files --&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-  <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
       </section>
       <section class="readme-section">
         <h2 class="readme-header">8. Bootstrap grid</h2>
