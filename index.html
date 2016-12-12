@@ -263,10 +263,15 @@
       </section>
       <section class="readme-section">
         <h2 class="readme-header">7. Bootstrap setup</h2>
-        <ol>
-          <li>Add `<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">` to the `head` of your HTML document.</li>
-          <li>Play with <code>class="btn btn-primary"</code> and <code>class="list-inline"</code>, your first Bootstrap classes</li>
-        </ol>
+
+        <p>Link Bootstrap stylesheet in the <code>head</code> section of your HTML <strong>before your stylesheet link</strong></p>
+<pre class="highlight html"><code><span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">'style.css'</span> <span class="na">rel=</span><span class="s">'stylesheet'</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</code></pre>
+          <p>Play with <code>class="btn btn-primary"</code> and <code>class="list-inline"</code>, your first Bootstrap classes</p>
+
       </section>
       <section class="readme-section">
         <h2 class="readme-header">8. Bootstrap grid</h2>
